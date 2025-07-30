@@ -1,0 +1,45 @@
+
+Working with VI
+================
+
+i --> Getting outside "command mode" and getting inside "insert mode"
+esc --> Getting outside of "insert mode" to "command mode" again
+
+Some Useful Commnads
+=====================
+=====================================================================
+= Hint: All these commands must be executed from the "command mode" =
+=====================================================================
+
+Deleting Characters
+====================
+To delete a character from a file, move the cursor until it is on the incorrect letter, then type
+      x
+The character under the cursor disappears. To remove four characters (the one under the cursor and the next three) type
+     4x
+To delete the character before the cursor, type
+      X (uppercase)
+
+
+Deleting Words
+===============
+To delete a word, move the cursor to the first letter of the word, and type
+      dw
+This command deletes the word and the space following it.
+To delete three words type
+       3dw
+
+Deleting Lines
+===============
+To delete a whole line, type
+       dd
+The cursor does not have to be at the beginning of the line. Typing dd deletes the entire line containing the cursor and places the cursor at the start of the next line. To delete two lines, type
+       2dd
+To delete from the cursor position to the end of the line, type
+       D (uppercase)
+
+
+
+
+
+       

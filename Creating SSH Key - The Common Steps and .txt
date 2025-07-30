@@ -1,0 +1,22 @@
+Creating SSH Key - The Common Steps and Commands
+==================================================
+1- Creating SSH directory ".ssh" on local machine "laptop"
+    cd ~
+    ssh-keygen -t rsa
+    press enter twice for file name & password "not required so far!!" --> or it is a better practice to create a password with our default password
+2- Navigate to SSH directory and read the public key
+    cd ~/.ssh
+    cat id_rsa.pub
+    copy the file content and paste it into the public SSH key section in the cloud SSH key
+    give a name for the SSH key being created for the cloud server
+3- Connect to the server using ssh command
+    ssh user_name@server_ip_or_name
+    accept the warning message about the public key fingerprint (yes) "this is because of the first time connection to the server"
+    then now you are connected!!
+4- Creating a config file to make the connectivity to servers much easier
+    touch config
+    Type inside the config file the following:
+    Host *
+     UseKeychain yes
+     AddKeysToAgent yes
+     IdentityFile ~/.ssh/(private_key_name)

@@ -1,0 +1,23 @@
+
+
+ftp://gbuildftp:*****@10.69.10.122/docker/scalearc/deskpro/deskpro-mysql-20180417.zip
+
+
+
+aws s3 cp s3://central-dbbackups/LiviuG/db.sql db.sql --profile Central
+
+
+touch -t 201806300000 /tmp/2018-Jun-30-0000
+
+find /opt/oracle/archive/COKE -type f ! -newer /tmp/2018-Jun-30-0000 | xargs ls -ltrh
+find /opt/oracle/archive/COKE -type f ! -newer /tmp/2018-Jun-30-0000 | xargs ls -lth
+
+
+touch -t 201806290200 /tmp/2018-Jun-29-0200
+find /opt/oracle/archive/COKE -type f ! -newer /tmp/2018-Jun-29-0200 | xargs ls -lth
+find /opt/oracle/archive/COKE -type f ! -newer /tmp/2018-Jun-29-0200 | xargs rm -i
+
+
+touch -t 201806290130 /tmp/2018-Jun-29-0130
+find /opt/oracle/archive/COKE -type f ! -newer /tmp/2018-Jun-29-0130 | xargs ls -lth
+find /opt/oracle/archive/COKE -type f ! -newer /tmp/2018-Jun-29-0130 | xargs rm -rf

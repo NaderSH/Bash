@@ -1,0 +1,10 @@
+
+# How to enable git visualization in zsh - also a better visualization for prompt directory
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git svn
+precmd() {
+    vcs_info
+}
+setopt prompt_subst
+PROMPT='%n in ${PWD/#$HOME/~}${vcs_info_msg_0_}
+%# '

@@ -1,0 +1,1 @@
+ps -fe  | grep -i smon

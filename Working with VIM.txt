@@ -1,0 +1,7 @@
+
+Working with VIM
+=================
+1- Open vim --> vim example_file.txt
+2- Save changes inside file --> ":" then "x"
+3- Save without existing the file --> ":" then "w"
+4- Exit the file without saving --> ":" then "q"
